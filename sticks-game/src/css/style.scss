@@ -1,0 +1,71 @@
+/*Normalize*/
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  
+    &:before,
+    &:after {
+      box-sizing: border-box;
+    }
+  }
+  
+  :focus,
+  :active {
+    outline: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+  
+  $backgroundColorOne: #f3b0e4;
+  $backgroundColorTwo: #86d6f1;
+  $buttonsTwo: #dc58bf;
+  $buttonsOne: #2db4e1;
+  $white: #ffffff;
+  $hoverButtons: #f77a37;
+  $disable: #ff0000;
+  $colorText: #472814;
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  @mixin position() {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  @mixin hoverBtn {
+    background-color: $hoverButtons;
+    transform: scale(1.1);
+    filter: drop-shadow(0.3125rem 0.3125rem 1.875rem $white);
+  }
+  
+  %sticksFire {
+    content: "";
+    position: absolute;
+    left: -1%;
+    right: -1%;
+    padding-top: 102%;
+    bottom: 52%;
+    border-radius: 0 50% 50% 50% / 50% 50% 50% 50%;
+    transform: scaleX(0.9) rotate(45deg);
+    background: linear-gradient(-45deg, #efe33e, #e73625);
+  }
+  
+  %buttons {
+    font-size: 1.3rem;
+    border-radius: 0.625rem;
+    border: none;
+    cursor: pointer;
+  }
+  
