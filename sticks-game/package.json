@@ -1,0 +1,26 @@
+{
+  "name": "sticks-game",
+  "version": "1.0.0",
+  "description": "a simple game with two players where they take turns removing sticks, the last one to make a move wins",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --mode production --open",
+    "build": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.22.20",
+    "babel-loader": "^9.1.3",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.50.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "style-loader": "^3.3.3",
+    "webpack-cli": "^5.1.4"
+  }
+}
